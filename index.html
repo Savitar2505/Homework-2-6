@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://images.vexels.com/media/users/3/144120/isolated/preview/4eff3df3a5d6f917f98ba7917ee40011-neon-cocktails-sign.png" alt="">
+        </div>
+        <div class="form">
+            <input type="text" id="input" placeholder="Cocktail name" class="input">
+            <button onclick="cocktails()">Search</button>
+        </div>
+        <div class="cocktailsBlock">
+
+        </div>
+        <div class="fixed-overlay fixed-overlay__modal" id="myModal">
+            <div class="modal">
+                <div class="modal_container">
+                    <div class="modalInfo">
+                        <p>Cocktail info</p>
+                        <hr>
+                    </div>
+                    <div class="ingredientsBlock">
+                        <p class="header">Ingredients :</p>
+                        <div class="ingredientsInfo">
+
+                        </div>
+                    </div>
+                    <div class="instructionsBlock">
+                        <p class="header">Instruction :</p>
+                        <div class="instructionText">
+
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                        <div class="modalBtn">
+                            <button onclick="modalSwitchOff()">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="preloader" class="preloader">
+            <div class="loader"></div>
+        </div>
+    </div>
+    </body>
+<script src="main.js"></script>
+</html>
